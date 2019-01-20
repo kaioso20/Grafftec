@@ -1,0 +1,4 @@
+Apenas importar no PHPMyAdmin com a base de dados nomeada de:
+leilao_db
+
+(já possui algumas tuplas).
