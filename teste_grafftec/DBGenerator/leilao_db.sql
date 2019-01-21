@@ -22,30 +22,6 @@ SET time_zone = "+00:00";
 -- Database: `leilao_db`
 --
 
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `lance_tb`
---
-
-CREATE TABLE `lance_tb` (
-  `id_lance` int(5) NOT NULL,
-  `id_pessoa` int(5) NOT NULL,
-  `id_produto` int(5) NOT NULL,
-  `valor_lance` varchar(12) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `lance_tb`
---
-
-INSERT INTO `lance_tb` (`id_lance`, `id_pessoa`, `id_produto`, `valor_lance`) VALUES
-(19, 50, 12, '51,35'),
-(20, 51, 12, '56,78'),
-(21, 50, 9, '2,35'),
-(25, 51, 13, '3250,52'),
-(26, 50, 14, '4,56'),
-(27, 51, 12, '60,00');
 
 -- --------------------------------------------------------
 
@@ -97,6 +73,30 @@ INSERT INTO `produto_tb` (`id_produto`, `nm_prod`, `valor_inicial`, `valor_final
 (12, 'Ventilador PortÃ¡til', '50,00', NULL, 55),
 (13, 'TelevisÃ£o 49\"', '2235,50', '3250,52', 50),
 (14, 'Sabonete Natura', '3,50', '4,56', 57);
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `lance_tb`
+--
+
+CREATE TABLE `lance_tb` (
+  `id_lance` int(5) NOT NULL,
+  `id_pessoa` int(5) NOT NULL,
+  `id_produto` int(5) NOT NULL,
+  `valor_lance` varchar(12) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `lance_tb`
+--
+
+INSERT INTO `lance_tb` (`id_lance`, `id_pessoa`, `id_produto`, `valor_lance`) VALUES
+(19, 50, 12, '51,35'),
+(20, 51, 12, '56,78'),
+(21, 50, 9, '2,35'),
+(25, 51, 13, '3250,52'),
+(26, 50, 14, '4,56'),
+(27, 51, 12, '60,00');
 
 --
 -- Indexes for dumped tables
