@@ -13,14 +13,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <title>Sistema de Leilão</title>
         <meta charset="utf-8">
+        
+        <!-- Scripts -->
+        <script type="text/javascript" src="../Bibliotecas/jQuery-Mask-Plugin-master/dist/jquery.mask.js"></script>
+        <script type="text/javascript" src="../Bibliotecas/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+        
     </head>
     <body>
-        
-            <div class="container" style="margin-top:40px;">
-                <a href="index.php">
-                    <button class="btn">Voltar</button>
-                </a>
-            </div>
+        <div class="container" style="margin-top:40px;">
+            <a href="index.php">
+                <button class="btn">Voltar</button>
+            </a>
+        </div>
         <main>
           <div class="container" style="margin-top:50px;">
               <form action="index.php" method="POST">
@@ -42,6 +46,11 @@
                     </div>
                     <div class="col-sm-2">
                         <input class="form-control" id="moeda" size="2" maxlength="12" type="text" name="valor_inicial" placeholder="Ex: 24,00" required/>
+                        <script>
+                            $(document).ready(function(){
+                                $('#moeda').mask('0.000.000,00', {reverse: true});
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="row" style="margin-top:30px;">
