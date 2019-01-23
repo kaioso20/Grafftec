@@ -15,6 +15,7 @@
         <meta charset="utf-8">
         
         <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
         <script type="text/javascript" src="../Bibliotecas/jQuery-Mask-Plugin-master/dist/jquery.mask.js"></script>
         <script type="text/javascript" src="../Bibliotecas/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
         

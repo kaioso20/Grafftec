@@ -40,6 +40,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Sistema de Leilão</title>
     <meta charset="utf-8">
+      
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="../Bibliotecas/jQuery-Mask-Plugin-master/dist/jquery.mask.js"></script>
+    <script type="text/javascript" src="../Bibliotecas/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+      
   </head>
     <body>
         <main>
@@ -96,7 +102,12 @@
                                         Valor do Lance:
                                     </div>
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" placeholder="00,00" autofocus name="valor_lance" maxlength="12" required/>
+                                        <input type="text" class="form-control" placeholder="00,00" id="moeda" autofocus name="valor_lance" maxlength="12" required/>
+                                        <script>
+                                            $(document).ready(function(){
+                                                $('#moeda').mask('0.000.000,00', {reverse: true});
+                                            });
+                                        </script>
                                     </div>
                                     <div class="col-sm-1">
                                         Seu nome:
